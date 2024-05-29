@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout target repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
         with:
           repository: LingamYoni/ESET-KeyGen
           ref: main
@@ -22,7 +22,7 @@ jobs:
         run: git fetch upstream
 
       - name: Merge upstream changes
-        run: git merge upstream/main
+        run: git merge upstream/main --allow-unrelated-histories
 
       - name: Push changes
         run: |
