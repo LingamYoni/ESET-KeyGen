@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout target repository
-        uses: actions/checkout@main
+        uses: actions/checkout@v4
         with:
           repository: LingamYoni/ESET-KeyGen
           ref: main
